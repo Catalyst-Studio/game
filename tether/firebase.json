@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "https://catalyst-craft-default-rtdb.firebaseio.com/",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
