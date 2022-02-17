@@ -50,7 +50,7 @@ window.onload = function () {
     } else if (chosenCategory === catagories[3]) {
       catagoryName.innerHTML = "The Chosen Catagory is TV Shows";
     } else if (chosenCategory === catagories[4]) {
-      catagoryName.innerHTML = "The Chosen Catagory is Food";
+      catagoryName.innerHTML = "The Chosen Catagory is Food"
     }
   }
 
