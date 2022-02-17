@@ -50,7 +50,7 @@ window.onload = function () {
     } else if (chosenCategory === catagories[3]) {
       catagoryName.innerHTML = "The Chosen Catagory is TV Shows";
     } else if (chosenCategory === catagories[4]) {
-      catagoryName.innerHTML = "The Chosen Catagory is Food"
+      catagoryName.innerHTML = "The Chosen Catagory is Food";
     }
   }
 
@@ -197,7 +197,6 @@ window.onload = function () {
     chosenCategory = categories[Math.floor(Math.random() * categories.length)];
     word = chosenCategory[Math.floor(Math.random() * chosenCategory.length)];
     word = word.replace(/\s/g, "-");
-    console.log(word);
     buttons();
 
     geusses = [ ];
