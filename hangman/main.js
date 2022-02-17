@@ -44,10 +44,13 @@ window.onload = function () {
     if (chosenCategory === categories[0]) {
       catagoryName.innerHTML = "The Chosen Category Is Premier League Football Teams";
     } else if (chosenCategory === categories[1]) {
-      catagoryName.innerHTML = "The Chosen Category Is Films";
+      catagoryName.innerHTML = "The Chosen Category Is Movies";
     } else if (chosenCategory === categories[2]) {
       catagoryName.innerHTML = "The Chosen Category Is Cities";
-    }
+    } else if (chosenCategory === catagories[3]) {
+      catagoryName.innerHTML = "The Chosen Catagory is TV Shows";
+    } else if (chosenCategory === catagories[4]) {
+      catagoryName.innerHTML = "The Chosen Catagory is Food";
   }
 
   // Create geusses ul
@@ -185,7 +188,9 @@ window.onload = function () {
     categories = [
         ["everton", "liverpool", "swansea", "chelsea", "hull", "manchester-city", "newcastle-united"],
         ["alien", "dirty-harry", "gladiator", "finding-nemo", "jaws", "bee-movie"],
-        ["manchester", "milan", "madrid", "amsterdam", "prague"]
+        ["manchester", "milan", "madrid", "amsterdam", "prague"],
+        ["south-park", "family-guy", "american-dad", "rick-and-morty", "sponge-bob", "the-simpsons", "friends"],
+        ["skittles", "cheese-burger", "mac-n-cheese", "fries"]
     ];
 
     chosenCategory = categories[Math.floor(Math.random() * categories.length)];
@@ -212,8 +217,10 @@ window.onload = function () {
 
       hints = [
         ["Based in Mersyside", "Based in Mersyside", "First Welsh team to reach the Premier Leauge", "Owned by A russian Billionaire", "Once managed by Phil Brown", "2013 FA Cup runners up", "Gazza's first club"],
-        ["Science-Fiction horror film", "1971 American action film", "Historical drama", "Anamated Fish", "Giant great white shark"],
-        ["Northern city in the UK", "Home of AC and Inter", "Spanish capital", "Netherlands capital", "Czech Republic capital"]
+        ["Science-Fiction horror film", "1971 American action film", "Historical drama", "Anamated Fish", "Giant great white shark", "movie about bees"],
+        ["Northern city in the UK", "Home of AC and Inter", "Spanish capital", "Netherlands capital", "Czech Republic capital"],
+        ["the souther part of a place people play", "a group of poeple with a guy", "off brand family guy", "science people", "soaks up water with a classic name", "green people", "people that get along with each other"],
+        ["colorful sweet things", "meat cheese bun", "cheesy noodles", "fried and cut potatoes"]
     ];
 
     var catagoryIndex = categories.indexOf(chosenCategory);
