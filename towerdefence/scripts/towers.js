@@ -494,6 +494,7 @@ tower.tesla = {
     secondary: [30, 139, 195],
     weight: 10,
     // Misc
+    follow: false,
     name: 'tesla',
     sound: 'spark',
     title: 'Tesla Coil',
@@ -515,7 +516,7 @@ tower.tesla = {
         ellipse(0, 0, r, r);
     },
     onAim(e) {
-        if (this.canFire() || this.follow) this.aim(e.pos.x, e.pos.y);
+        // if (this.canFire() || this.follow) this.aim(e.pos.x, e.pos.y);
         if (stopFiring) return;
         if (!this.canFire()) return;
         this.resetCooldown();
@@ -572,7 +573,7 @@ tower.tesla = {
                 ellipse(0, 0, r, r);
             },
             onAim(e) {
-                if (this.canFire() || this.follow) this.aim(e.pos.x, e.pos.y);
+                // if (this.canFire() || this.follow) this.aim(e.pos.x, e.pos.y);
                 if (stopFiring) return;
                 if (!this.canFire()) return;
                 this.resetCooldown();
