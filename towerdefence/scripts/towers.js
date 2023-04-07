@@ -576,7 +576,6 @@ tower.tesla = {
                 if (stopFiring) return;
                 if (!this.canFire()) return;
                 this.resetCooldown();
-        
                 var last = e;
                 var targets = [];
                 var dmg = round(random(this.damageMin, this.damageMax));
