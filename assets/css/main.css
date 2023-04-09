@@ -96,7 +96,16 @@ input, select, textarea {
 
 	body {
 		background: #1b1f22;
+		-ms-overflow-style: none;  /* IE and Edge */
+		scrollbar-width: none;  /* Firefox */
 	}
+		body.nobar::-webkit-scrollbar {
+			display: none;
+		}
+		body.normnobar {
+			-ms-overflow-style: none;  /* IE and Edge */
+			scrollbar-width: none;  /* Firefox */
+		}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 			-moz-animation: none !important;
